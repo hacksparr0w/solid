@@ -1,0 +1,23 @@
+[project]
+name = "solid"
+version = "0.1.0"
+description = "Functional state management framework for Python"
+readme = "README.md"
+authors = [
+    { name = "hacksparr0w", email = "hacksparr0w@protonmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "reactivex>=4.0.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.387",
+    "pytest>=8.3.3",
+    "ruff>=0.7.2",
+]
